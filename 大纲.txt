@@ -1,0 +1,51 @@
+封面与项目概览（使用 OJ主页.png）
+- 项目定位与目标：教学与竞赛场景下的在线评测平台（使用 OJ主页.png）
+- 核心能力总览：评测、后台管理、AI 辅助（使用 OJ主页.png）
+
+前台功能演示
+- 题目列表与检索（使用 OJ题目.png）
+- 题目详情与样例说明（使用 OJ题目详情.png）
+- 提交记录总览（使用 OJ提交记录.png）
+- 判题详情页（编译/运行/日志/用例）（使用 OJ判题详情.png）
+- 判题结果与统计展示（使用 OJ判题结果显示.png）
+- AI 解题思路入口与输出示例（使用 OJAI解题思路功能.png、OJAI解题思路输出示例.png）
+
+后台管理演示（管理员/教师）
+- 仪表盘（使用 OJ后台仪表盘.png）
+- 题目列表（使用 OJ后台题目列表.png）
+- 教师视角：仅显示本人题目（使用 OJ后台题目列表(教师).png）
+- 题目添加（富文本编辑器）（使用 OJ后台题目添加(Editor.md富文本编辑器).png）
+- 公告列表（使用 OJ后台公告列表.png）
+- 用户管理（使用 OJ后台用户管理.png）
+- 竞赛管理（使用 OJ竞赛管理.png）
+- 系统配置（AI Provider/Key/Model）（使用 OJ系统配置.png）
+- AI 测试页面（使用 OJ后台AI测试.png）
+
+AI 能力说明
+- 解题思路（SSE 流式/一次性）（使用 OJAI解题思路功能.png、OJAI解题思路输出示例.png）
+- 判题答疑（结合编译日志/程序输出/判题状态）（使用 OJAI答疑功能.png）
+- 举一反三：生成相似题与测试用例（使用 OJAI举一反三(生成答案前).png、OJAI举一反三(生成答案后).png）
+
+判题流程
+- 提交 → 编译/构建（C 使用 gcc；Python 直接运行）（使用 OJ判题详情.png）
+- 用例依次运行与输出比对（.in/.out）（使用 OJ判题结果显示.png）
+- 分值统计与总状态生成（AC/WA/CE 等）（使用 OJ判题结果显示.png）
+
+角色与权限
+- 角色：ADMIN、TEACHER、USER（使用 OJ后台仪表盘.png）
+- 教师权限：后台仅开放题目/竞赛入口，列表仅显示本人（使用 OJ后台题目列表(教师).png）
+
+技术栈与部署
+- 前端：Vue3 + Vite + Element Plus（使用 OJ主页.png）
+- 后端：Spring Boot 3 + JPA + Validation（使用 OJ系统配置.png）
+- 数据库：MySQL（JPA 自动维护表结构）（使用 OJ系统配置.png）
+- 本地开发代理：/api → http://localhost:8081（使用 OJ主页.png）
+- 启动与构建：后端 mvnw run；前端 npm run dev；前端构建 npm run build（使用 OJ后台仪表盘.png）
+
+运维与系统配置
+- AI Provider/Key/Model 设置与回退策略（使用 OJ系统配置.png）
+- 测试数据目录：backend/data/problems/{id}/ 放置 .in/.out（使用 OJ判题结果显示.png）
+
+总结与扩展
+- 支持更多语言与安全沙箱（使用 OJ判题详情.png）
+- 更细粒度权限与评测策略扩展（使用 OJ后台仪表盘.png）
